@@ -17,7 +17,7 @@ public class Fractal {
         x0 += increment;
         int n = inSet(x0,y0,iternumber);
 
-        pixels.put(count, RGBColour.getColour(n));
+        pixels.put(count, RGBColour.getColour(n, iternumber));
         count++;
       }
     }
@@ -57,7 +57,7 @@ public class Fractal {
       System.out.println(fileName + " created successfully!");
 
     } catch (IOException e) {
-      System.out.println("IOException!");
+      System.out.println(e);
     }
 
   }

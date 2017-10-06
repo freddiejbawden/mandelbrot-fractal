@@ -15,7 +15,9 @@ public class RGBColour {
 		this.blue = num;
 	}
 
-	public static RGBColour getColour(int n) {
+	public static RGBColour getColour(int n, int iternumber) {
+		float scale = ((float) n)/((float) iternumber);
+		n = (int) (scale*255);
 		if (n <= 51) {
 			//blue
 			return new RGBColour(0,3*n,(255-3*n));
