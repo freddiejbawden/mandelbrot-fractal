@@ -1,4 +1,4 @@
-
+//changed
 public class RGBColour {
 	private int red;
 	private int blue;
@@ -33,7 +33,6 @@ public class RGBColour {
 			return new RGBColour(3*newN,0,0);
 		}
 	}
-
 	public int getRed() {
 		return red;
 	}
